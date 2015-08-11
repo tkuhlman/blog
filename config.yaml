@@ -1,6 +1,8 @@
 ---
 baseurl: "http://backgroundprocess.com/"
-languageCode: "en-us"
 title: "Background Process"
+languageCode: "en-us"
 params:
   description: "This site hosts my mental Background Process output."
+metaDataFormat: "yaml"
+#theme: nofancy
