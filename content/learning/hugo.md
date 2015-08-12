@@ -2,6 +2,7 @@
 date: "2015-08-10T21:49:04-06:00"
 draft: true
 title: "Hugo"
+type: "post"
 ---
 
 I like static generated sites, simple, effective and secure. I love github pages as it gets the job done easily and well. Jekyll is a natural fit

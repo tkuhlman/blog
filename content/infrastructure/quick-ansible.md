@@ -1,6 +1,7 @@
 ---
 date: "2014-11-07T19:27:21-06:00"
 title:  "Ansible Utilities"
+type: "post"
 tags:
   - Ansible
   - configuration management

@@ -1,6 +1,7 @@
 ---
 date: "2015-02-23T21:41:01-06:00"
 title:  "An Engineer's Perspective on the Value of Management"
+type: "post"
 tags:
   - Management
 ---
@@ -11,7 +12,7 @@ down to this, an engineering manager should enable his team to get work done.
 
 For most engineers a large part of their motivation is the desire to be productive. The more a manager enables this the better everything works. Not only
 does more work get done, engineers are more satisfied and they have a better perception of and relationship with their manager.
-
+<!--more-->
 ## Management Responsibilities
 The nature of management, or any other discipline primarily concerning people, is such that you can't define exactly what that means for most situations.
 I believe this is a large part of the reason that a few managers are horribly bad, a small proportion great, but most find themselves somewhere in

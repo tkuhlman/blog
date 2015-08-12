@@ -1,6 +1,7 @@
 ---
 date: "2015-05-19T21:56:28-06:00"
 title:  "Vagrant Love"
+type: "post"
 tags:
   - vagrant
 ---
@@ -17,8 +18,8 @@ cleanly without adding baggage to the process.
 Another aspect that is important is that Vagrant chooses sane defaults but still allows configurability. The sane defaults combined with the clean design mean
 that more often than not Vagrant makes building vm based environments far easier than any other way. This is probably what I love most about Vagrant, I can turn
 around a clustered dev environment in under 5 minutes and even share it with my team with no extra work. This is orders of magnitude faster than other solutions.
-
+<!--more-->
 Building Vagrant based environments that fast takes good docs and familiarity with Vagrant. Vagrant has [great simple and clear docs](https://docs.vagrantup.com/v2/)
 and the familiarity largely comes because Vagrant is versatile. The configurability of Vagrant allows it to have quite a bit of depth for those less than standard use cases.
 This in turn means you come to know the tool and appreciate its simplicity and ease, which in turn makes it easier to use. All of this ultimately culminates in you
-writing a blog post about Vagrant love. 
+writing a blog post about Vagrant love.

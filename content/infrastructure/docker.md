@@ -1,6 +1,7 @@
 ---
 date: "2015-03-11T21:36:35-06:00"
 title: "Docker, what use it?"
+type: "post"
 tags:
   - docker
 ---
@@ -11,7 +12,7 @@ infrastructure where I can deploy images into production my practical mindset dr
 use is Docker for my work today?
 
 As I have explored Docker here are the uses for it that I have encountered that bring practical value to my day to day work.
-
+<!--more-->
 ## Development Environments
 When it comes to starting up a quick environment to test out something you may or may not keep around, VMs are an undisputed improvement over bare metal and
 containers are step above VMs. It is so quick and seamless to get a dedicated container for whatever the current need is I find myself doing more and more

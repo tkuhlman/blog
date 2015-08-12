@@ -1,6 +1,7 @@
 ---
 date: "2014-12-18T22:01:37-06:00"
-title:  "Advanced Ansible"
+title: "Advanced Ansible"
+type: "post"
 tags:
   - Ansible
   - configuration management

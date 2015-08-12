@@ -1,8 +1,33 @@
 ---
+# Identification
 baseurl: "http://backgroundprocess.com/"
 title: "Background Process"
+author:
+  name: Tim Kuhlman
+  email: tim@backgroundprocess.com
+
+# Site Config
 languageCode: "en-us"
+permalinks:
+  post: /:year/:month/:day/:title/
+metaDataFormat: "yaml"
+theme: greyshade
+taxonomies:
+  tag: "tags"
+paginate: 5
 params:
   description: "This site hosts my mental Background Process output."
-metaDataFormat: "yaml"
-#theme: nofancy
+  # Social/Sharing
+  subscribe_rss: "http://feeds.feedburner.com/BackgroundProcess"
+  github_user: "tkuhlman"
+  linkedin_user: "timkuhlman"
+  facebook_like: true
+  google_plus_one: true
+  twitter_tweet_button: true
+
+  # Disqus Comments
+  disqus_short_name: "backgroundprocess"
+  disqus_show_comment_count: false
+
+  # google analytics
+  google_analytics_tracking_id: "UA-56102734-1"

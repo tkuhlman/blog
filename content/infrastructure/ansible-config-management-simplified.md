@@ -1,6 +1,7 @@
 ---
 date: "2014-11-02T21:00:22-06:00"
 title:  "Ansible - Configuration Management Simplifed"
+type: "post"
 tags:
   - Ansible
   - configuration management

@@ -1,6 +1,7 @@
 ---
 date: "2014-10-28T22:17:36-06:00"
 title: "Time to Blog!"
+type: "post"
 tags:
   - learning
   - blogging

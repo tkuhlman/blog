@@ -1,6 +1,7 @@
 ---
 date: "2015-01-06T21:43:31-06:00"
 title: "Ansible Modules"
+type: "post"
 tags:
   - Ansible
   - Python
@@ -11,7 +12,7 @@ for those who don't work in it full time, however there are times when more func
 write a module.
 
 I have written a couple of [modules for Monasca](https://github.com/hpcloud-mon/ansible-module-monasca) and doing so was easy, particularly if you know Python.
-
+<!--more-->
 ## Common Python Functions
 
 Though you can write modules in any language there are various functions available for Python that simplify the process.

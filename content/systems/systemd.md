@@ -1,6 +1,7 @@
 ---
 date: "2014-11-28T10:46:35-06:00"
 title:  "Initial impressions of systemd"
+type: "post"
 tags:
   - Linux
   - systemd
