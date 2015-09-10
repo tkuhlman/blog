@@ -27,6 +27,9 @@
 - Markdown - use with github and readthedocs
 
 ## Non-technical ideas
+- Most of complication in modern life has moved to software. Software on the other hand is simple building blocks and becomes mostly about
+  complexity management. Techniques like layers of abstraction and encapsulation are key to good complexity management. The difference between
+  good system design and bad is often how well the complexity management is done.
 - The importance of Fast Feedback and running your own product.
 - Architects who don't know details are impediments to progress rather than enablers.
 - The importance of Velocity in the software industry.
