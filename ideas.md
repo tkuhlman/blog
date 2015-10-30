@@ -10,6 +10,12 @@
 - git
   - workflow, lots of repos versus few, git subtree versus git submodules
 - Docker
+  - This is a good explanation of the container workflow that Docker enables that lxd doesn't
+    aka 'Continuous Delivery' - http://thenewstack.io/containers-disrupting-devops-infographic/
+    - I think the most important part is an easy way to share them not the focus on system containers
+      but the focuse on system container tends to make you think of them a bit like pets not cattle and
+      easy sharing is less of a focus.
+    - I talked a bit about this in my Initial impressions ofLXD post.
   - Talk about the Monasca demo, kitematic, in general hiding implementation details.
   - Ansible + docker how I both build and deploy with Ansible.
     - Annoyances with docker, include that the service startups fail with the newer init replacements so my roles have to be modified.
