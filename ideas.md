@@ -33,6 +33,16 @@
 - Markdown - use with github and readthedocs
 
 ## Non-technical ideas
+- Development best practices for sysadmins. Really the same as for developers but there are some that
+  sysadmins tend to neglect and need to really keep in mind. I'm happy to say no longer is this true
+  of basics like using source control. Here are some ideas and I could come up with more:
+  - YAGNI - reference - http://martinfowler.com/bliki/Yagni.html
+    - In particular this quote "Yagni only applies to capabilities built into the software to support a presumptive feature, it does not apply to effort to make the software easier to modify."
+  - Better automated testing. Devs need to do better testing in general I find sysadmins test scripts
+    manually really well but don't automate the testing as well. The manual testing is great that first
+    time but the automated testing really helps for any future edits.
+  - Make it simple to use. Sysadmins are badasses at the CLI and forget not everyone is.
+  - I should make it clear that I don't think there is a place for a sysadmin that can't code anymore.
 - Most of complication in modern life has moved to software. Software on the other hand is simple building blocks and becomes mostly about
   complexity management. Techniques like layers of abstraction and encapsulation are key to good complexity management. The difference between
   good system design and bad is often how well the complexity management is done.
