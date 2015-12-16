@@ -31,26 +31,10 @@
   - kubernetes, flocker, even things like apache mesos and to some extent juju fit into this.
 - Something golang related.
 - Markdown - use with github and readthedocs
+  - I have a love hate relationship with markdown, I like it as text but am generally disappointed in rendering (My lists don't work and I need more empty
+    lines in my text generally)
 
 ## Non-technical ideas
-- Development best practices for sysadmins. Really the same as for developers but there are some that
-  sysadmins tend to neglect and need to really keep in mind. I'm happy to say no longer is this true
-  of basics like using source control. Here are some ideas and I could come up with more:
-  - YAGNI - reference - http://martinfowler.com/bliki/Yagni.html
-    - In particular this quote "Yagni only applies to capabilities built into the software to support a presumptive feature, it does not apply to effort to make the software easier to modify."
-  - Better automated testing. Devs need to do better testing in general I find sysadmins test scripts
-    manually really well but don't automate the testing as well. The manual testing is great that first
-    time but the automated testing really helps for any future edits.
-  - Make it simple to use. Sysadmins are badasses at the CLI and forget not everyone is.
-  - I should make it clear that I don't think there is a place for a sysadmin that can't code anymore.
-- Most of complication in modern life has moved to software. Software on the other hand is simple building blocks and becomes mostly about
-  complexity management. Techniques like layers of abstraction and encapsulation are key to good complexity management. The difference between
-  good system design and bad is often how well the complexity management is done.
-- The importance of Fast Feedback and running your own product.
-- Architects who don't know details are impediments to progress rather than enablers.
-- The importance of Velocity in the software industry.
-  - Faster to market, faster to fix issues, faster to respond to customers with new features.
-  - One key thing you can't sacrifice quality for speed. The speed should be a way to attain quality faster as you recognize nothing goes perfect.
 - The importance of running the service you work on.
   - It proves the product.
   - It bring fast feedback loops that help you to improve the product, as you get immediate clarity on bugs, needed features and annoyances.
@@ -60,7 +44,11 @@
   - Increases developer satisfaction through allowing a developer to work hard on something, deploy it and immediately see it used in
     a real installation.
   - Leverages the motivation that naturally comes from being on call and responsible.
-- Teams and tasks need to be vertical slices not component/tech based.
+- Architects who don't know details are impediments to progress rather than enablers.
+- The importance of Velocity in the software industry.
+  - Faster to market, faster to fix issues, faster to respond to customers with new features.
+  - One key thing you can't sacrifice quality for speed. The speed should be a way to attain quality faster as you recognize nothing goes perfect.
+- Teams and tasks should be vertical slices not component/tech based.
   - A team is best with one set of goals but multiple sets of expertise. Ie make product X is the goal, the skills include back end code, ops, ui,
     testing, etc.
   - When breaking down team tasks epics should be vertical slices crossing across components not focused on a component. A focus on a component
