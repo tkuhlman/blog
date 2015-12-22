@@ -1,4 +1,9 @@
 # Potential Ideas
+- lxd nesting
+  - Primarily about the integration env I use for mojo
+  - I need a newer lxc for trusty to work with nesting.
+  - Unprivileged means no mknod so I need to download the root FS as mentioned at https://www.stgraber.org/2014/01/17/lxc-1-0-unprivileged-containers/
+  - The immutable infrastructure I was working on for Monasca CI could be talked about also, see notes below
 - Talk about the immutable infrastruce CI environment I built for Monasca.
   - Make sure to pull from much of my philosophy on this found in the Readme for the monasca/ci repo.
   - Talk about velocity of code commits and help the CI environment needs to preserve this.
