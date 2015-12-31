@@ -14,6 +14,8 @@
 - Building packages. Various ways of doing debs, python packages, etc.
 - git
   - workflow, lots of repos versus few, git subtree versus git submodules
+- Explore journald and other aspects of systemd in depth.
+  - this article intrigued me about journald, http://sysadvent.blogspot.com/2015/12/day-17-grokking-systemd-for-fun-and.html
 - Docker
   - This is a good explanation of the container workflow that Docker enables that lxd doesn't
     aka 'Continuous Delivery' - http://thenewstack.io/containers-disrupting-devops-infographic/
