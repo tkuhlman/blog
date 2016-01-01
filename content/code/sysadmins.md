@@ -22,6 +22,8 @@ naturally to one group or another, so here are some best practices I think come 
   - Standardize - Choose sane defaults, don't be afraid to limit choice and flexibility so the code steers people towards good practices, or at least standard practices.
   - YAGNI - reference - http://martinfowler.com/bliki/Yagni.html
     - In particular this quote "Yagni only applies to capabilities built into the software to support a presumptive feature, it does not apply to effort to make the software easier to modify."
+  ** Explore some of the ideas discussed from http://sysadvent.blogspot.com/2015/12/day-22-simplicity-in-complex-systems.html
+    - Reduce - SHE - Shrink, Hide (Some complexity is unavoidable, rather than moving it around sometimes you can hide it, of course sometimes you do want to move it around as that adds organization and in that way does simplify.), Embody related to hide in my mind, basically be the thing that handles the complexity.
 - good separation of concern and good code structure.
   - Turns out the basics of code are easy. 5 year olds can grasp the concepts of branches and loops, most of code is dealing with the complexity
     of having a lot of branches and loops. That is why the common code constructs (classes, inheritance, types/interfaces) exist.
@@ -38,7 +40,13 @@ naturally to one group or another, so here are some best practices I think come 
     automated integration tests. I am big fan of using containers with some pre-built test environments to more easily automate integration testing.
 - Document it. Maybe this is one both devs and sys admins could do better at. When you just wrote it you know what it does but everyone appreciates good
   documentation, ideally built-in. The closer to the code the better as it is the most likely to stay up to date as things evolve and is the easiest for
-  users to find.
+  users to find. Also being close to the code gives you an automatic context saving the
+  act of having to meaningfully build that context into the documentation itself.
+  - The act of documenting it can also be a tool for discovering unnecessarily complexity that can be
+    improved. When documenting you have to force yourself to think like someone unfamiliar with the
+    project which is an important mindset to adopt periodically. I find that often the big wins where
+    just a bit more automation to hide a step or even a step that can be removed are revealed when
+    documenting.
 
 Finally one best practice that does come naturally to sysadmins but is critical is to use and run your own code in a real environment.
 The importance of this could be a post in and of itself, perhaps someday I will write that. This is one enormous advantage sys admins have
