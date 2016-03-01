@@ -18,13 +18,31 @@
   - workflow, lots of repos versus few, git subtree versus git submodules
 - Explore journald and other aspects of systemd in depth.
   - this article intrigued me about journald, http://sysadvent.blogspot.com/2015/12/day-17-grokking-systemd-for-fun-and.html
-- Docker
+- Containers
+  - rocket?
+  - Investigate the security aspect of docker containers on my system. How does it compare to lxd and
+    rocket. Can I improve it without loosing functionality? Write as a follow up to docker for pets post.
   - This is a good explanation of the container workflow that Docker enables that lxd doesn't
     aka 'Continuous Delivery' - http://thenewstack.io/containers-disrupting-devops-infographic/
     - I think the most important part is an easy way to share them not the focus on system containers
       but the focuse on system container tends to make you think of them a bit like pets not cattle and
       easy sharing is less of a focus.
-    - I talked a bit about this in my Initial impressions ofLXD post.
+    - I talked a bit about this in my Initial impressions of LXD post.
+  - LXD
+    - Is it more secure? It has in a lot of builtin security, that I like.
+    - LXD is great for anything needing init, I think I said that in my initial rambling thoughts on it.
+      There are times when this is needed and others when really I just want one app running, ie chrome.
+    - LXD is a non-starter for my personal containers, unpriveleged bind mounts nobody in the container,
+      you can use acls to make it viewable but still get issues for some things (like ssh) because
+      permissions checks fail. Additionally the acls are specific to the running container and so very
+      cumbersome to widely implement.
+      - When you consider not only dot config files but also /dev/dri and other files needed for gui/sound
+        I don't think there is much of an option of this working well until user<->user bind mounting
+        exists.
+    - LXD has recursive embedding of itself figured out. I don't think I will have much luck on that with
+      Docker, though admitedly haven't tried.
+    - Basically I really should think of lxd as a full VM like system and use docker/rocket for everything
+      else including individual dev environments and apps.
   - Talk about the Monasca demo, kitematic, in general hiding implementation details.
   - Ansible + docker how I both build and deploy with Ansible.
     - Annoyances with docker, include that the service startups fail with the newer init replacements so my roles have to be modified.
