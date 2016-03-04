@@ -1,10 +1,8 @@
 # Potential Ideas
 - lxd nesting
   - Primarily about the integration env I use for mojo
-  - I need a newer lxc for trusty to work with nesting.
-  - Unprivileged means no mknod so I need to download the root FS as mentioned at https://www.stgraber.org/2014/01/17/lxc-1-0-unprivileged-containers/
   - The immutable infrastructure I was working on for Monasca CI could be talked about also, see notes below
-- containers naively and how I haven't touched vagrant since going back to Linux on the desktop. I talked about this some in my post about docker for
+- containers natively and how I haven't touched vagrant since going back to Linux on the desktop. I talked about this some in my post about docker for
   messy pets but could expand on how I have left vagrant behind and haven't minded.
 - Talk about the immutable infrastruce CI environment I built for Monasca.
   - Make sure to pull from much of my philosophy on this found in the Readme for the monasca/ci repo.
@@ -19,7 +17,6 @@
 - Explore journald and other aspects of systemd in depth.
   - this article intrigued me about journald, http://sysadvent.blogspot.com/2015/12/day-17-grokking-systemd-for-fun-and.html
 - Containers
-  - rocket?
   - Investigate the security aspect of docker containers on my system. How does it compare to lxd and
     rocket. Can I improve it without loosing functionality? Write as a follow up to docker for pets post.
   - This is a good explanation of the container workflow that Docker enables that lxd doesn't
@@ -27,6 +24,11 @@
     - I think the most important part is an easy way to share them not the focus on system containers
       but the focuse on system container tends to make you think of them a bit like pets not cattle and
       easy sharing is less of a focus.
+    - Another aspect/way to think of the conainer workflow is the shift from machine centered infrastructure to application centered
+      as talked about at http://queue.acm.org/detail.cfm?id=2898444
+      - ie standard utilization metrics collected per container, which is per application not per machine. Logging is done based on the
+        container, aka the application not with concern to which machine. Both of those are done at the container level which has a standard
+        interface and so can be easily done no matter the application.
     - I talked a bit about this in my Initial impressions of LXD post.
   - LXD
     - Is it more secure? It has in a lot of builtin security, that I like.
@@ -41,7 +43,7 @@
         exists.
     - LXD has recursive embedding of itself figured out. I don't think I will have much luck on that with
       Docker, though admitedly haven't tried.
-    - Basically I really should think of lxd as a full VM like system and use docker/rocket for everything
+    - Basically I really should think of lxd as a full VM like system and use docker for everything
       else including individual dev environments and apps.
   - Talk about the Monasca demo, kitematic, in general hiding implementation details.
   - Ansible + docker how I both build and deploy with Ansible.
