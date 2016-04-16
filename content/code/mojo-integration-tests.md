@@ -16,7 +16,7 @@ There are a few key advantages I see to doing the integration tests in a contain
 
  - Having a repeatable environment enables automation, sharing of the environment among developers, using
    the environment as a base standard and incremental improvement.
- - The image can be built to a stanadard, in this case it runs Ubuntu LTS with the latest distributed versions
+ - The image can be built to a standard, in this case it runs Ubuntu LTS with the latest distributed versions
    of Juju/Mojo and other tooling.
  - Isolation from the primary dev environment allows for easy cleanup, easier testing of various branches and tests
    more easily run in parallel.
