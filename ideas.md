@@ -1,6 +1,4 @@
 # Potential Ideas
-- containers natively and how I haven't touched vagrant since going back to Linux on the desktop. I talked about this some in my post about docker for
-  messy pets but could expand on how I have left vagrant behind and haven't minded.
 - Markdown or Asciidoc - use with github and readthedocs
   - I have a love hate relationship with markdown, I like it as text but am generally disappointed in rendering (My lists don't work and I need more empty
     lines in my text generally)
