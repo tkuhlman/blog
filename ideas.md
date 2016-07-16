@@ -2,6 +2,8 @@
 - Markdown or Asciidoc - use with github and readthedocs
   - I have a love hate relationship with markdown, I like it as text but am generally disappointed in rendering (My lists don't work and I need more empty
     lines in my text generally)
+  - Make sure to mention the slidy plugin for asciidoc, it is great.
+  - I like asciidoc but haven't been able to escape markdown it is too common for shared projects. Given that I'm just not fully utilizing asciidoc.
 - Documentation driven development
   - Any other ideas related to code quality following up on my post about Dev best practices for
     sysadmins.
