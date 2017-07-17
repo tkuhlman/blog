@@ -1,4 +1,8 @@
 # Potential Ideas
+- snaps versus docker containers. Consider converting minecraft and pycharm to be snaps. Investigate the
+  advantages/disadvantages and compare to my docker for messy pets post.
+  - I probably need a new snap repo for building these as I can't distribute the binaries.
+  - Also note there is a jenkins snap I can use as an example.
 - Markdown or Asciidoc - use with github and readthedocs
   - I have a love hate relationship with markdown, I like it as text but am generally disappointed in rendering (My lists don't work and I need more empty
     lines in my text generally)
