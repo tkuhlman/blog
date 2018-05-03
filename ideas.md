@@ -1,3 +1,6 @@
+# Drafts
+- design/design_doc.md is a draft still
+
 # Potential Ideas
 - snaps versus docker containers. Consider converting minecraft and pycharm to be snaps. Investigate the
   advantages/disadvantages and compare to my docker for messy pets post.
