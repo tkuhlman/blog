@@ -2,10 +2,7 @@
 - design/design_doc.md is a draft still
 
 # Potential Ideas
-- snaps versus docker containers. Consider converting minecraft and pycharm to be snaps. Investigate the
-  advantages/disadvantages and compare to my docker for messy pets post.
-  - I probably need a new snap repo for building these as I can't distribute the binaries.
-  - Also note there is a jenkins snap I can use as an example.
+- Operational Hygiene
 - Markdown or Asciidoc - use with github and readthedocs
   - I have a love hate relationship with markdown, I like it as text but am generally disappointed in rendering (My lists don't work and I need more empty
     lines in my text generally)
@@ -41,6 +38,8 @@
     decentralizing the day to day management tasks.
 
 ## Old ideas
+- Investigate the security aspect of docker containers. How does it compare to the competition?
+  Can I improve it without loosing functionality?
 - Talk about the immutable infrastruce CI environment I built for Monasca.
   - Make sure to pull from much of my philosophy on this found in the Readme for the monasca/ci repo.
   - Talk about velocity of code commits and help the CI environment needs to preserve this.
@@ -48,38 +47,3 @@
 - git
   - workflow, lots of repos versus few, git subtree versus git submodules
 - The ~/bin/docker-tips and ~/bin/docker-cleanup should be mentioned. Really just the mess it can become to manage many containers. Ansible really helps out here so mention that and how I can both build and deploy with Ansible.
-
-## Ideas I can explore but for which others will have a better perspective
-- Containers
-  - Investigate the security aspect of docker containers on my system. How does it compare to lxd and
-    rocket. Can I improve it without loosing functionality? Write as a follow up to docker for pets post.
-  - This is a good explanation of the container workflow that Docker enables that lxd doesn't
-    aka 'Continuous Delivery' - http://thenewstack.io/containers-disrupting-devops-infographic/
-    - I think the most important part is an easy way to share them not the focus on system containers
-      but the focuse on system container tends to make you think of them a bit like pets not cattle and
-      easy sharing is less of a focus.
-    - Another aspect/way to think of the conainer workflow is the shift from machine centered infrastructure to application centered
-      as talked about at http://queue.acm.org/detail.cfm?id=2898444
-      - ie standard utilization metrics collected per container, which is per application not per machine. Logging is done based on the
-        container, aka the application not with concern to which machine. Both of those are done at the container level which has a standard
-        interface and so can be easily done no matter the application.
-    - I talked a bit about this in my Initial impressions of LXD post.
-  - LXD
-    - Is it more secure? It has in a lot of builtin security, that I like.
-    - LXD is great for anything needing init, I think I said that in my initial rambling thoughts on it.
-      There are times when this is needed and others when really I just want one app running, ie chrome.
-    - LXD is a non-starter for my personal containers, unpriveleged bind mounts nobody in the container,
-      you can use acls to make it viewable but still get issues for some things (like ssh) because
-      permissions checks fail. Additionally the acls are specific to the running container and so very
-      cumbersome to widely implement.
-      - When you consider not only dot config files but also /dev/dri and other files needed for gui/sound
-        I don't think there is much of an option of this working well until user<->user bind mounting
-        exists.
-    - LXD has recursive embedding of itself figured out. I don't think I will have much luck on that with
-      Docker, though admitedly haven't tried.
-    - Basically I really should think of lxd as a full VM like system and use docker for everything
-      else including individual dev environments and apps.
-  - Image deployment, why it works for Docker and why the industry moved away from it years ago for servers.
-- The next big challenge is the management of large amounts of containers.
-  - Lots of contenders are entering this space perhaps do a review and comparison of them.
-  - kubernetes, flocker, even things like apache mesos and to some extent juju fit into this.
