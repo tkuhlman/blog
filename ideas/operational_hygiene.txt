@@ -1,0 +1,56 @@
+** This could be turned into a decent blog post or set of them
+
+= Operational Hygiene
+:author: Tim Kuhlman
+:backend: slidy
+
+== Why
+
+* This is part of our job we both build and run the service.
+* When things run smoothly:
+  ** Our consumers are happy which is good for success.
+  ** We are happy, and we get fewer on-call interruptions.
+    ** This is the main reason our https://confluence.gannett.com/display/APIS/Content-Pipeline+KPIs[KPI] is less than 3 alerts per week.
+  ** We have time to focus on other activities.
+* Any service will require maintenance but if we stay on top of it the maintenance is minor rather than a major disturbance.
+
+== What
+
+* Take care when making changes to watch for operational impacts.
+* Handling and Tuning Alerts
+  ** Alerts have a sweet spot, too sensitive and they are annoying, too coarse and they don't notify you of upcoming problems. We must tweak them on a
+     regular basis to maintain the sweet spot.
+  ** This regular tuning is also a key reason why it is really nice to have alerts defined in source control both for history and review.
+* Regular checkups on service status
+  ** Not everything is a failure condition some things are just aspects that could run better, we should watch metrics for these things.
+* Larger maintenance done as tickets
+  ** Test DB restores fit into this category.
+
+== How
+
+=== Tooling
+There are many tools we use to build and deploy our services but when it comes to the Operational Hygiene we are mostly focused on the monitoring tooling.
+
+* New Relic
+  ** Alerting
+  ** Dashboards
+* VictorOps
+* Logs
+  ** Sumo is the main portal for logging but logs can also be retrieved for individual pods via kubectl
+* Other
+  ** At times more tooling is needed, and we should not hesitate to reach for another tool.
+    For example the page https://confluence.gannett.com/display/APIS/Service+Provider+Errors was tossed together to help track patterns in repeated errors.
+
+=== Process
+* On Deploy
+  ** Watch relevant dashboards and alerts to be ready and aware of any issues.
+* On-call rotation
+  ** When starting on call you should review dashboards. This is good for the project and for your familiarity with everything.
+  ** During the week of on call you are responsible for tuning alerts. We have a regular ticket for this right now and can always add more to track time.
+
+== Digging In
+We can discuss any of the above or go through some scenarios, some ideas:
+
+* Viewing alert paramaters, editing and deploying alert changes.
+* Dashboard creation and updates.
+* Sumo searches, how to access saved searches, talk about appropriate logging levels.

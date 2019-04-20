@@ -1,8 +1,11 @@
 # Drafts
 - design/design_doc.md is a draft still
 
+- I should at some point link in my medium posts https://medium.com/@tim_20708
+
 # Potential Ideas
 - Operational Hygiene
+- Expand on the reasons I like Go, github.com/tkuhlman/golang-sig/various/beginners.txt
 - Markdown or Asciidoc - use with github and readthedocs
   - I have a love hate relationship with markdown, I like it as text but am generally disappointed in rendering (My lists don't work and I need more empty
     lines in my text generally)
