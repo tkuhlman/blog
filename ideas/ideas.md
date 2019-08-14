@@ -1,6 +1,4 @@
 # Drafts
-- design/design_doc.md is a draft still
-
 - I should at some point link in my medium posts https://medium.com/@tim_20708
 
 # Potential Ideas

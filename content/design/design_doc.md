@@ -2,7 +2,6 @@
 date: "2018-05-03T10:42:45-06:00"
 title: "Design Docs Best Practices"
 type: "post"
-draft: true
 tags:
   - Design
 ---
@@ -20,5 +19,3 @@ Design docs can vary in their scope and layout according to the project but ther
 * *Why* - Project Goals/Problem Description - This section lays out why this project is being worked on, what is the motivation for spending the time on it. As part of this section you may want to include specific use cases that give a concrete picture on how the project is intended to be used.
 * *What* - Requirements and Implementation Goals - Define the requirements for this project and its constraints whether these are non-negotiable technology decisions (ie must integrate with X) or SLAs that we would like to meet. Sometimes it is quite helpful to detail out what is not in scope for this project to prevent unintentional scope creep.
 * *How* - Design/Architecture - This is likely the largest section where the primary design decisions are detailed with the reasons for choosing one direction over others that were considered. Where possible include concrete data that led to these design decisions. Also try and cover all the major aspects to a service including the operational characteristics such as monitoring and security as well as the good architecture considerations and practices allow the project to be evolvable in the future.
-
-### Examples
