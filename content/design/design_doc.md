@@ -6,7 +6,10 @@ tags:
   - Design
 ---
 
-Each project deserves careful thought on the design and architecture of the solution. This is something that should be done at the start of projects and for each major revision. One tool for design and architecting is to write a design doc for each major revision. The audience for these docs includes the team that will do the implementation but also other technical developers and architects within the organization who can give feedback. Design docs brings these advantages to a project:
+Each project deserves careful thought on the design and architecture of the solution. This is something that should be done at the start of projects and for each major revision. One tool for design and architecting is to write a design doc for each major revision.
+<!--more-->
+
+The audience for these docs includes the team that will do the implementation but also other technical developers and architects within the organization who can give feedback. Design docs brings these advantages to a project:
 
 * The problem to be solved, implementation goals and design decisions with tradeoffs are understood by all involved parties not just the implementors. This also serves to align all interested parties on the primary goals of a project.
 * Others can review the design and provide feedback. The is made possible because design docs enable talking about design decisions one step removed from the implementation details allowing for a wider audience to have time to understand and review the process.

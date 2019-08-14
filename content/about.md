@@ -2,8 +2,7 @@
 title: About
 
 ---
-I'm Tim Kuhlman a systems engineer and software developer based in Fort Collins, Colorado. I primarily work
-with infrastructure automation.
+I'm Tim Kuhlman a systems engineer and software developer based in Fort Collins, Colorado.
 
 This blog is the output of all the background processes running in my head. By no means is that meant to
 indicate that this is the left over thoughts that emerge after I have focused on the important things.
