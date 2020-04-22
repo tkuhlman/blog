@@ -1,0 +1,24 @@
+** Another old but decent write up I could turn into a post
+
+I advocate for a culture of design http://backgroundprocess.com/usatodaynetwork/design_culture/ where designs are documented before implementing the service.
+These practices help us start projects having thought through why we are doing it, what we are doing and how we are doing it.
+Also the team has a documented design to review and which everyone can use to gain understanding of the service.
+In short these practices accomplish a lot but despite that they are really only the beginning the service still needs to be built and run.
+Also it is a bit unfair of me to make it sound like an easy checklist, design doc ✓, build it ✓, run it ✓ - in reality the steps overlap.
+It is common and expected to be starting to run a service while still building it and to be starting to build it while finalizing the design.
+At times a well thought out design can't be finished without learning more by starting to build it.
+It is also very Agile to be adding new features that go through a design, build, run cycle onto existing services which have already been through the cycle many times.
+
+Proof of Concepts (PoC) are parts of the project that are built while the design phase is still ongoing. They are a valuable tool for many reasons:
+* You often can't learn things only reading about them you must do some work. We all learned to code (and continue to learn) by doing projects not just reading the docs. The same holds true for learning what we need to make a robust design.
+* Design Docs are a distillation of the core ideas for a design but it is easy to put too much detail in them. One reason this is easy to do is because those details must be understood before we can write the high level summary that is needed for the design doc and part of understanding them is detailing them out. PoC provides a place for these details before the project code is built out.
+* At some point saying X is a great way to approach this is just words, as the name implies a PoC proves a solution in a way a design doc never can.
+* A PoC makes the building phase go faster. This is of course especially true when the PoC can be used in the final solution but even when tossed the learnings gained from the PoC help the building of the project go faster and smoother. Developers often rewrite a service for v2 because of the greater understanding gained in doing v1, same principle here.
+
+
+A few things to keep in mind when working with a PoC.
+* A PoC like other code must work but it also must be a learning tool. The learnings from the PoC then must feed back into the design allowing it to be finalized.
+* Often a PoC teaches us something that leads in another direction with the design. Sometimes we purposefully do a PoC for different alternative ways of accomplishing things. In either of these cases some PoC work is abandoned and never finished. However just about as often the PoC is part of the foundation the full project will be built on.
+* Doing a PoC is a sign the design doc process is working. A design doc that brings up questions that require investigation is a success, it forced us to think through things and intentionally design rather than stumble along with an unintentional design.
+* A PoC should be quality code, unfinished is fine but poised and ready to be finished. This is not only because it may be used in the final product but also because you don't prove out an alternative solution if the code is poor nor do you learn as much and so you end up undermining the point of doing a PoC.
+* A completed PoC doesn't mean you get to leave a design doc unfinished. The learnings should be fed back into the design doc which should still be reviewed by your team and then used as the basis for moving forward with the service. This is critical for all of the reasons that design documents are useful in the first place including allowing your team to understand the final design

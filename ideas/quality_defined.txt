@@ -1,0 +1,40 @@
+A successful service often benefits from being delievered quickly but it always benefits from being delievered with quality.
+As part of trying to deliver services as quickly as possible while maintaining quality we must know what aspects of quality we are aiming for.
+
+== Quality Defined
+On one hand quality is something you recognize when you see it unfortunately that is too vague to be a clear target to aim out.
+Defining quality gives us clear targets.
+
+I split the definition into sections for dev, operations and team quality below to help think through things.
+Keep in mind development quality has a direct effect on operational quality and operational quality leads to relevant feedback for improving development quality, team quality affects them both.
+
+=== Development Quality
+* Clear code
+  * Single Responsibility Principle and other principles of https://github.com/dwmkerr/hacker-laws#solid[SOLID]
+  * https://go-proverbs.github.io/[Clear is better than Clever] and related https://github.com/dwmkerr/hacker-laws#kernighans-law[Kernighan's Law]
+  * DRY (Don't Repeat Yourself) - When it contributes to clear code
+* Code which is written to be easily testable and has automated tests.
+* Code is appropriately documented.
+  * Smart comments, generally comments should answer the "Why" question.
+  * Good commit messages and PR titles also are important.
+* Code follows agreed upon designs.
+* Errors are appropriately handled in the code.
+* Security is in the design and is not an after thought.
+* Leveraging the inherent quality of software that it is easy to refactor, building software is not like building a physical object.
+  * Start with a basic design for what is needed and refactoring when scope changes.
+  * Tech debt is fixed and a regular basis and not allowed to putrefy.
+
+=== Operational Quality
+* The services meet its Service Level Objectives (SLOs).
+* Changes are well tested before going live. In general the http://backgroundprocess.com/code/done/[Done Criteria] are followed.
+* Recovery from mistakes is quick.
+* The service has monitoring and appropriate alerting. "If it isn't monitored it doesn't exist."
+* Attention to our feedback cycles including regular review of metrics, watching metrics during changes and Post Mortems.
+
+=== Team Quality
+* Sharing ownership and work for all owned services. Avoid getting stuck in silos for different services.
+* As you build something make sure you bring the rest of the team with you. Not everyone all of the time but everyone some of the time and someone all of the time.
+  * Have others do PR/design reviews, even if only a partial review.
+  * Use team demos to keep everyone up to date.
+  * Keep changes small enough for others to quickly understand and review.
+* Take time to review PRs/designs for others.
