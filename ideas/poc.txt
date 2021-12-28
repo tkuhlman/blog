@@ -22,3 +22,5 @@ A few things to keep in mind when working with a PoC.
 * Doing a PoC is a sign the design doc process is working. A design doc that brings up questions that require investigation is a success, it forced us to think through things and intentionally design rather than stumble along with an unintentional design.
 * A PoC should be quality code, unfinished is fine but poised and ready to be finished. This is not only because it may be used in the final product but also because you don't prove out an alternative solution if the code is poor nor do you learn as much and so you end up undermining the point of doing a PoC.
 * A completed PoC doesn't mean you get to leave a design doc unfinished. The learnings should be fed back into the design doc which should still be reviewed by your team and then used as the basis for moving forward with the service. This is critical for all of the reasons that design documents are useful in the first place including allowing your team to understand the final design
+
+See my ideas file for the concept of having a bias for action in software development, it is related.
